@@ -1,0 +1,11 @@
+Da primeira vez que tentei rodar o exemplo apareceu o seguinte erro:
+
+Fatal error: Call to undefined function mcrypt_create_iv() in /var/www/passwordhashing/index.php on line 2
+
+Resolvi reinstalando o mcrypt do php com o comando:
+
+sudo php5enmod mcrypt
+
+Depois restartando o Apache com o comando:
+
+sudo service apache2 restart
